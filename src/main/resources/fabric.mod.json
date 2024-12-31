@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "silentmode",
+  "version": "${version}",
+  "name": "silentmode",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/silentmode/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.destinysoul.silentmode.client.SilentmodeClient"
+    ],
+    "main": [
+      "dev.destinysoul.silentmode.Silentmode"
+    ]
+  },
+  "mixins": [
+    "silentmode.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
